@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact page</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  </head>
+  <body>
+    <header>
+      <main>
+        <section class="contact">
+          <div class="container">
+            <div class="left">
+              <div class="form-wrapper">
+                <div class="contact-heading">
+                    <h1>contact</h1>
+                  <p class="text">
+                    if you'd like to get in touch regarding a tattoo appointment
+                    or consultation, please fill out the form below and attach a
+                    pdf of your design and i'll get back to you as soon as i
+                    can. your patience is appreciated.
+                    </div>
+                    <form action="contact.html" method="post" class="contact-form">
+
+                    <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" name="first name" type="text" required>
+                        <label>first name</label>
+                        <i class="icon fa-solid fa-address-card"></i>
+                    </div>
+
+                    <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" name="last name" type="text" required>
+                        <label>last name</label>
+                        <i class="icon fa-regular fa-address-card"></i>
+                    </div>
+
+                    <div class="input-wrap w-100">
+                        <input class="contact-input" autocomplete="off" name="email" type="email" required>
+                        <label>email</label>
+                        <i class="icon fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input-wrap textarea w-100">
+                        <textarea name="message" auto-complete="off" class="contact-input" required></textarea>
+                        <label>message</label>
+                        <i class="icon fa-regular fa-message"></i>
+                    </div>
+                    <div class="contact-buttons">
+                        <button class="btn upload">
+                            <span>
+                                <i class="fa-solid fa-paperclip"></i> add attachment
+                            </span>
+                            <input type="file" name ="attachment">
+                        </button>
+                        <input type="submit" value="send message" class="btn">
+                    </div>
+                    </form>
+              </div>
+            </div>
+            <div class="right"></div>
+          </div>
+        </section>
+      </main>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">swk tattoos</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/gallery.html" class="navbar__links">gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/flash.html" class="navbar__links">flash</a>
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://calendly.com/swktat/tatapt?back=1&month=2023-03"
+              class="navbar__links"
+              >bookings</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="https://www.instagram.com/swktat/" class="navbar__links"
+              >instagram</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="/contact.html" class="button">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="app.js"></script>
+  </body>
+</html>
